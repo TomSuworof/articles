@@ -15,5 +15,7 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           javadoc-branch: javadoc
-          java-version: 21
-          project: maven # or gradle
+          java-version: 17
+          target-folder: html
+          project: maven
+          custom-command: mvn clean com.ruleoftech:markdown-page-generator-plugin:2.1.0:generate
