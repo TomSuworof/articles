@@ -15,6 +15,13 @@
     }
 }
 
+.article-publication-date {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #666;
+}
+
 code, 
 pre {
     font-family: JetBrains Mono, monospace;
