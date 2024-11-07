@@ -1,21 +1,41 @@
-name: Deploy Javadoc
+name: Deploy articles
 
 on:
   push:
     branches:
       - master
-      - main
 
 jobs:
   publish:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy JavaDoc 🚀
-        uses: MathieuSoysal/Javadoc-publisher.yml@v2.4.0
+      - name: Check out
+        # You may use a newer version of https://github.com/actions/checkout
+        uses: actions/checkout@v4
+
+      - name: Generate your content
+        run: mvn clean com.ruleoftech:markdown-page-generator-plugin:2.1.0:generate
+
+      - name: Publish current workdir (which contains generated content) to GitHub Pages
+        uses: rayluo/github-pages-overwriter@v1.3
+
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          javadoc-branch: javadoc
-          java-version: 17
-          target-folder: html
-          project: maven
-          custom-command: mvn clean com.ruleoftech:markdown-page-generator-plugin:2.1.0:generate
+          # Optional.
+          #
+          # Default value "." means the root directory of your project will be published.
+          #
+          # You can use whatever directory your project uses,
+          # for example "wwwroot" (without leading "./").
+          # Such a directory does *not* have to already exist in your repo,
+          # it could be an output directory created dynamically
+          # by your static website builder.
+          source-directory: target/html
+
+          # Optional. Default value "gh-pages".
+          # It specifies the temporary branch which hosts the static website.
+          # Each build will REMOVE this branch and replace it with new content.
+          # (If you want to keep your old "gh-pages" branch,
+          # you should define a different target branch for this GPO action to work with.)
+          target-branch: gh-pages
