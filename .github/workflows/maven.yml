@@ -3,7 +3,7 @@ name: Deploy articles
 on:
   push:
     branches:
-      - master
+      - main,master
 
 jobs:
   publish:
