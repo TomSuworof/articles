@@ -1,3 +1,14 @@
+.home {
+    padding: 10pt;
+}
+
+/* [aria-current="page"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+} */
+
 .article-root {
     padding-top: 20pt;
     padding-bottom: 60pt;
