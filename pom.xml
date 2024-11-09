@@ -36,7 +36,7 @@
         <configuration>
           <headerHtmlFile>${project.basedir}/src/main/resources/markdown/html/header.html</headerHtmlFile>
           <footerHtmlFile>${project.basedir}/src/main/resources/markdown/html/footer.html</footerHtmlFile>
-          <copyDirectories>css,js,favicon</copyDirectories>
+          <copyDirectories>css,js,favicon,images</copyDirectories>
         </configuration>
       </plugin>
     </plugins>
