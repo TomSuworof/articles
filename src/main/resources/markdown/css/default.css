@@ -2,6 +2,11 @@
     padding: 10pt;
 }
 
+img {
+    max-height: 540px;
+    width: auto;
+}
+
 .article-root {
     padding-top: 20pt;
     padding-bottom: 60pt;
