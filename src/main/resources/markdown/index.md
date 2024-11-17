@@ -1,6 +1,120 @@
+[Готовка под музыку](./cooking-with-music.html)
+<div class="article-publication-date">
+    <time datetime="2024-11-11 20:30">11.11.2024 20:30</time>
+</div>
+<br>
+
+[Run the Jewels](./run-the-jewels.html)
+<div class="article-publication-date">
+    <time datetime="2024-10-11 21:03">11.10.2024 21:03</time>
+</div>
+<br>
+
 [Ненависть](./hate.html)
 <div class="article-publication-date">
     <time datetime="2024-09-22 19:14">22.09.2024 19:14</time>
+</div>
+<br>
+
+[ИИ](./ai.html)
+<div class="article-publication-date">
+    <time datetime="2024-09-10 19:34">10.09.2024 19:34</time>
+</div>
+<br>
+
+[Когда я научился играть?](./when-i-learned-to-play-games.html)
+<div class="article-publication-date">
+    <time datetime="2024-08-16 20:49">16.08.2024 20:49</time>
+</div>
+<br>
+
+[Вкус](./taste.html)
+<div class="article-publication-date">
+    <time datetime="2024-07-30 21:24">30.07.2024 21:24</time>
+</div>
+<br>
+
+[Музыка в Watch Dogs](./watch_dogs-music.html)
+<div class="article-publication-date">
+    <time datetime="2024-07-13 23:55">13.07.2024 23:55</time>
+</div>
+<br>
+
+[Как музыка переносит меня в игры](./music-transfers-to-games.html)
+<div class="article-publication-date">
+    <time datetime="2024-06-22 23:14">22.06.2024 23:14</time>
+</div>
+<br>
+
+[Думать руками](./think-by-hands.html)
+<div class="article-publication-date">
+    <time datetime="2024-05-18 22:37">18.05.2024 22:37</time>
+</div>
+<br>
+
+[Амазон](./amazon.htm)
+<div class="article-publication-date">
+    <time datetime="2024-04-20 19:40">20.04.2024 19:40</time>
+</div>
+<br>
+
+[Инди](./index.html)
+<div class="article-publication-date">
+    <time datetime="2024-03-27 21:04">27.03.2024 21:04</time>
+</div>
+<br>
+
+[Ильяхов про контекст](./context-ilyahov.html)
+<div class="article-publication-date">
+    <time datetime="2024-03-06 21:21">06.03.2024 21:21</time>
+</div>
+<br>
+
+[Что если так будут делать все?](./everybody-do-same.html)
+<div class="article-publication-date">
+    <time datetime="2024-02-20 20:22">20.02.2024 20:22</time>
+</div>
+<br>
+
+[Книга Джозефа Хиза. Бунт на продажу](./book-joseph-heath-the-rebel-sell.html)
+<div class="article-publication-date">
+    <time datetime="2024-02-18 19:59">18.02.2024 19:59</time>
+</div>
+<br>
+
+[Super local](./real-gta-v-map.html)
+<div class="article-publication-date">
+    <time datetime="2024-02-15 20:25">15.02.2024 20:25</time>
+</div>
+<br>
+
+[Do you want to use a computer that is always looking at your hands](./apple-vision-pro.html)
+<div class="article-publication-date">
+    <time datetime="2024-01-30 21:38">30.01.2024 21:38</time>
+</div>
+<br>
+
+[Шинная борьба](./tire-fight.html)
+<div class="article-publication-date">
+    <time datetime="2024-12-22 21:49">22.12.2024 21:49</time>
+</div>
+<br>
+
+[В новый год я выдыхаю](./new-year-relief.html)
+<div class="article-publication-date">
+    <time datetime="2024-01-14 15:07">14.01.2024 15:07</time>
+</div>
+<br>
+
+[Ядро и плагины](./core-and-plugins.html)
+<div class="article-publication-date">
+    <time datetime="2023-12-17 21:34">17.12.2023 21:34</time>
+</div>
+<br>
+
+[В бизнесе, как на войне, все средства хороши](./business-vs-war.html)
+<div class="article-publication-date">
+    <time datetime="2023-12-03 10:50">03.12.2023 10:50</time>
 </div>
 <br>
 
