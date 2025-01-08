@@ -2,7 +2,11 @@
     display: flex;
   }
 
-.home, .tg {
+.home {
+    padding: 10pt;
+}
+
+.tg {
     padding: 10pt;
 }
 
