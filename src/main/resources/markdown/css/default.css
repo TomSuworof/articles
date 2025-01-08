@@ -1,4 +1,8 @@
-.home {
+.header-buttons {
+    display: flex;
+  }
+
+.home, .tg {
     padding: 10pt;
 }
 
