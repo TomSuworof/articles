@@ -8,7 +8,7 @@
   <version>1.0.0</version>
 
   <name>articles</name>
-  <url>http://www.example.com</url>
+  <url>https://tomsuworof.github.io/articles/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
