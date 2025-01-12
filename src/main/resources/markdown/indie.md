@@ -11,12 +11,14 @@
 [Журнал "Моделист-конструктор"](https://modelist-konstruktor.com/). У меня дома десятки бумажных выпусков, ещё отец выписывал. Отдельно стоит упомянуть визуальный стиль чертежей и иллюстраций — медятина. А ещё кнопка загрузки называется "Бесконечность не предел", ну каеф же. Я же в свою очередь угарал по ["Популярной механике"](https://elementy.ru/nauchno-populyarnaya_biblioteka/zhurnaly/popularnaja_mehanika/soderzhanie_nomerov_zhurnala) (русской версии).
 
 Пакет ссылок с автомобильными самоделками:
+
 - [Спорткар Юна от Юрия Алгебраистова](https://youtu.be/F0CnDpzqK2k).
 - [Flying Brick от Деда Кабы](https://youtu.be/qNrkXdQXnJU).
 - Самоделки Дмитрия Парфёнова: [Мерседес и Броневик](https://youtu.be/y1FMn9Anrcw), [Лаура-3](https://youtu.be/CnOi2KNYZow).
 - Роман Русинов про [спорткар Marussia](https://youtu.be/wl74Ipcp4Ew) и свой новый проект [Rossa](https://youtu.be/29F1nRUN0co).
 
 Приложения и проекты, которыми пользуются полтора землекопа:
+
 - [Сборник альтернативных клиентов для популярных приложений](https://github.com/mendel5/alternative-front-ends)
 - [OpenTopoMap](https://github.com/der-stefan/OpenTopoMap)
 
