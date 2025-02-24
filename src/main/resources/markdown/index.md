@@ -1,3 +1,8 @@
+[Игры и крипта](./games-and-crypto.html)
+<div class="article-publication-date">
+    <time datetime="2025-02-23 21:02">23.02.2025 21:02</time>
+</div>
+
 [Выход в реальный мир](./game-mechanics-real-world.html)
 <div class="article-publication-date">
     <time datetime="2025-02-02 20:16">02.02.2025 20:16</time>
