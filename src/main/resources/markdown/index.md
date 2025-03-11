@@ -2,11 +2,13 @@
 <div class="article-publication-date">
     <time datetime="2025-02-23 21:02">23.02.2025 21:02</time>
 </div>
+<br>
 
 [Выход в реальный мир](./game-mechanics-real-world.html)
 <div class="article-publication-date">
     <time datetime="2025-02-02 20:16">02.02.2025 20:16</time>
 </div>
+<br>
 
 [Готовка под музыку](./cooking-with-music.html)
 <div class="article-publication-date">
