@@ -1,3 +1,9 @@
+[The puzzle is the point](./the-puzzle-is-the-point.html)
+<div class="article-publication-date">
+    <time datetime="2025-03-19 20:23">19.03.2025 20:23</time>
+</div>
+<br>
+
 [Игры и крипта](./games-and-crypto.html)
 <div class="article-publication-date">
     <time datetime="2025-02-23 21:02">23.02.2025 21:02</time>
