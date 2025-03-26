@@ -1,3 +1,9 @@
+[Goodnight, developers](./goodnight-developers.html)
+<div class="article-publication-date">
+    <time datetime="2025-03-26 21:02">26.03.2025 21:02</time>
+</div>
+<br>
+
 [The puzzle is the point](./the-puzzle-is-the-point.html)
 <div class="article-publication-date">
     <time datetime="2025-03-19 20:23">19.03.2025 20:23</time>
