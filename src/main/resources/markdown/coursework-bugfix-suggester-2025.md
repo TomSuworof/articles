@@ -48,7 +48,7 @@
 
 Чтобы избавиться от предопределённости в тестировании и исследовать возможные нетривиальные случаи (так называемые “edge cases” или “corner cases” — пограничные ситуации), применяется «фаззинг». «Фаззинг» (англ. fuzzing, fuzz testing) — вид тестирования, при котором на вход в тестируемую систему подаётся случайный набор данных [[16]](#16). Данные могут быть как по-настоящему случайными, не имеющими нужного для входа формата — фаззинг такого типа называется мутационным, — так и форматированными, но с элементами случайности (например, JSON с определёнными полями, но случайными значениями в них) — это порождающий фаззинг [[17]](#17).
 
-Инструменты тестирования представляют собой целые фреймворки, потому что позволяют проверять программное обеспечение сразу на нескольких уровнях и заставляют разработчиков писать исходный код в таком стиле, чтобы его можно было «покрыть тестами» — то есть для каждого входа и выхода создать алгоритм их проверки. Среди фреймворков для тестирования стоит выделить JUnit [[18]](#18) для Java,  GTest [[19]](#19) для C++, PyTest [[20]](#20) для Python. Для фаззинг-тестирования — JBroFuzz [[21]](#21) от OWASP, позволяющий проверять веб-приложения.
+    Инструменты тестирования представляют собой целые фреймворки, потому что позволяют проверять программное обеспечение сразу на нескольких уровнях и заставляют разработчиков писать исходный код в таком стиле, чтобы его можно было «покрыть тестами» — то есть для каждого входа и выхода создать алгоритм их проверки. Среди фреймворков для тестирования стоит выделить JUnit [[18]](#18) для Java, GTest [[19]](#19) для C++, PyTest [[20]](#20) для Python. Для фаззинг-тестирования — JBroFuzz [[21]](#21) от OWASP, позволяющий проверять веб-приложения.
 
 Фреймворки для тестирования устроены по одному принципу: есть ввод, есть исследуемый алгоритм, есть желаемый вывод, есть фактический вывод, который должен совпасть с ожидаемым. Такой подход используется в большинстве языков, когда нужно проверять именно алгоритм. Но также есть подходы и инструменты, которые позволяют проверять результат всей программы.
 
@@ -60,7 +60,7 @@
 
 Все описанные далее инструменты работают на основе тестов (англ. Test Suite based Program Repair): на вход инструментам подаётся программа и тесты, которые она должна проходить (подробнее об этом говорилось в разделе о динамическом анализе). Тесты здесь выступают как спецификация работы программы за неимением формального описания программы [[34]](#34). Это нужно, чтобы понять, до какой степени изменять программу, какое у неё должно быть задуманное поведение. В исследованной литературе такой подход называют «генерируй и проверяй» (англ. Generate-and-Validate). Все инструменты такого метода реализуют один и тот же алгоритм: локализация ошибки, создание исправления, проверка исправления. В результате работы инструменты создают так называемые «патчи», (англ. patch — заплата), применимость которых оценивается разработчиком.
 ### 1.2.1. Исправления на основе эвристик
-Одним из ранних инструментов автоматического исправления программ является GenProg [[35]](#35). Он использует генетическое программирование для поиска исправлений дефектов. Итоговое исправление получается путём пошагового применения наиболее подходящих промежуточных исправлений поменьше [[36]](#36). Инструмент создавался для языка С, но также есть копия инструмента для языка Java — jGenProg [[37]](#37). Последователями инструмента являются: RSRepair [[38]](#38) —  используется не генетическое программирование, а случайный поиск для поиска исправлений [[39]](#39); ARJA [[40]](#40) — предоставляют улучшения в области поиска исправлений, предлагает многоцелевую оптимизацию, работает с языком Java [[41]](#41).
+    Одним из ранних инструментов автоматического исправления программ является GenProg [[35]](#35). Он использует генетическое программирование для поиска исправлений дефектов. Итоговое исправление получается путём пошагового применения наиболее подходящих промежуточных исправлений поменьше [[36]](#36). Инструмент создавался для языка С, но также есть копия инструмента для языка Java — jGenProg [[37]](#37). Последователями инструмента являются: RSRepair [[38]](#38) — используется не генетическое программирование, а случайный поиск для поиска исправлений [[39]](#39); ARJA [[40]](#40) — предоставляют улучшения в области поиска исправлений, предлагает многоцелевую оптимизацию, работает с языком Java [[41]](#41).
 ### 1.2.2. Исправления на основе модели
 К этой категории относятся инструменты, которые в процессе работы создают промежуточное представление, которым оперируют при создании исправления. В разной литературе эту категорию называют по-разному:
 - «на основе синтеза» (англ. synthesis-based) — по итогу работы программа обратно синтезируется из модели;
@@ -113,7 +113,7 @@ SkipAnalyzer [[70]](#70) — статический анализатор и ср
 
 IRIS [[71]](#71) — инструмент, сочетающий в себе CodeQL, описанный ранее, и БЯМ [[72]](#72). В ходе своей работы IRIS собирает кандидаты для ошибок в коде самой программы и используемых библиотеках, используя CodeQL, маркирует входы и выходы данных, потенциально пригодные для исследуемой ошибки, используя БЯМ, анализирует граф вызовов для входов и выходов, снова используя CodeQL, фильтрует ложные срабатывания и показывает результат разработчику, используя БЯМ. Как заявляют авторы, ключевой идеей проекта была гипотеза, что «большие языковые модели видели достаточно использований различных библиотек и API и у них должно быть понимание о представленных там ошибках».
 
-Semgrep [[73]](#73) реализует поиск неисправностей и уязвимостей в исходном коде на основе правил, заданных пользователем-разработчиком. Бесплатная версия, работающая локально, позволяет искать ошибки внутри одного файла, в то время как платная версия позволяет отслеживать выполнение кода между файлами, даёт доступ к платформе для поиска неисправностей и доступ к цифровому ассистенту на основе БЯМ, понижающему число ложный срабатываний. Инструмент можно использовать как отдельную утилиту через  интерфейс командной строки (англ. CLI — command line interface), как часть процесса сборки, получая комментарии к изменениям — коммитам и запросам на изменения (англ. commits и Pull Requests).
+Semgrep [[73]](#73) реализует поиск неисправностей и уязвимостей в исходном коде на основе правил, заданных пользователем-разработчиком. Бесплатная версия, работающая локально, позволяет искать ошибки внутри одного файла, в то время как платная версия позволяет отслеживать выполнение кода между файлами, даёт доступ к платформе для поиска неисправностей и доступ к цифровому ассистенту на основе БЯМ, понижающему число ложный срабатываний. Инструмент можно использовать как отдельную утилиту через интерфейс командной строки (англ. CLI — command line interface), как часть процесса сборки, получая комментарии к изменениям — коммитам и запросам на изменения (англ. commits и Pull Requests).
 
 DeepCode [[74]](#74) — статический анализатор от Snyk, основанный на машинном обучении. Инструмент обучался на исходном коде проектов, выложенных на GitHub, используя AST для лучшего понимания конструкций языка. DeepCode AI лежит в основе целой платформы от Snyk, направленной на анализ ошибок и уязвимостей в программах.
 
@@ -155,38 +155,39 @@ DeepCode [[74]](#74) — статический анализатор от Snyk, 
 
 ```xml
 <reporting>
-    <plugins>
-        <!-- mvn com.github.spotbugs:spotbugs-maven-plugin:gui to show GUI -->
-        <plugin>
-            <groupId>com.github.spotbugs</groupId>
-            <artifactId>spotbugs-maven-plugin</artifactId>
-            <version>4.8.5.0</version>
-            <configuration>
-                <effort>Max</effort>
-                <threshold>low</threshold>
-                <failOnError>true</failOnError>
-                <includeFilterFile>${project.basedir}/spotbugs-include.xml</includeFilterFile>
-                <excludeFilterFile>${project.basedir}/spotbugs-exclude.xml</excludeFilterFile>
-                <plugins>
-                    <plugin>
-                        <groupId>com.h3xstream.findsecbugs</groupId>
-                        <artifactId>findsecbugs-plugin</artifactId>
-                        <version>1.13.0</version>
-                    </plugin>
-                </plugins>
-            </configuration>
-        </plugin>
-        <!-- mvn com.salat:bugfix-suggester-maven-plugin:suggest -->
-        <plugin>
-            <groupId>com.salat.bugfix-suggester</groupId>
-            <artifactId>bugfix-suggester-maven-plugin</artifactId>
-			<configuration><inputFileWithBugs>${build.directory}/spotbugsXml.xml</inputFileWithBugs>
-                <modelName>deepseek-coder-v2:lite</modelName>
-                <prompt>SpotBugs after analysis gives this error. Suggest a fix. The error: %bugContent%. Source code: ```%sourceFile%```. Keep the answer small and precise, code mostly.</prompt>
-                <modelRequestTimeout>9000</modelRequestTimeout>
-            </configuration>
-        </plugin>
-    </plugins>
+    <plugins>
+        <!-- mvn com.github.spotbugs:spotbugs-maven-plugin:gui to show GUI -->
+        <plugin>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs-maven-plugin</artifactId>
+            <version>4.8.5.0</version>
+            <configuration>
+                <effort>Max</effort>
+                <threshold>low</threshold>
+                <failOnError>true</failOnError>
+                <includeFilterFile>${project.basedir}/spotbugs-include.xml</includeFilterFile>
+                <excludeFilterFile>${project.basedir}/spotbugs-exclude.xml</excludeFilterFile>
+                <plugins>
+                    <plugin>
+                        <groupId>com.h3xstream.findsecbugs</groupId>
+                        <artifactId>findsecbugs-plugin</artifactId>
+                        <version>1.13.0</version>
+                    </plugin>
+                </plugins>
+            </configuration>
+        </plugin>
+        <!-- mvn com.salat:bugfix-suggester-maven-plugin:suggest -->
+        <plugin>
+            <groupId>com.salat.bugfix-suggester</groupId>
+            <artifactId>bugfix-suggester-maven-plugin</artifactId>
+            <configuration>
+                <inputFileWithBugs>${build.directory}/spotbugsXml.xml</inputFileWithBugs>
+                <modelName>deepseek-coder-v2:lite</modelName>
+                <prompt>SpotBugs after analysis gives this error. Suggest a fix. The error: %bugContent%. Source code: ```%sourceFile%```. Keep the answer small and precise, code mostly.</prompt>
+                <modelRequestTimeout>9000</modelRequestTimeout>
+            </configuration>
+        </plugin>
+    </plugins>
 </reporting>
 
 ```
@@ -207,52 +208,52 @@ DeepCode [[74]](#74) — статический анализатор от Snyk, 
 ## 3.4. Применимость артефакта работы
 Несмотря на описанные выше сложности в виде увеличения времени и нагрузки на сервера для сборки проектов, стоит отметить его успешную применимость.
 
-Работа артефакта проверялась на личном проекте автора briene (3182 строки кода), на проекте самого артефакта (1022 строки кода) и на проектах с открытым исходным кодом: JUnit4 как проект среднего размера (32 232 строки кода) и Debezium — большой многомодульный проект (249 803 строки кода). Тестирование проводилось на машине со следующими характеристиками: AMD Ryzen 7 7840H w/ Radeon(TM) 780M Graphics     3.80 GHz, 32 Гб ОЗУ. Конфигурация плагина для SpotBugs и артефакта представлены на фрагменте исходного кода ниже. Результаты тестирования представлены в таблице 1.
+        Работа артефакта проверялась на личном проекте автора briene (3182 строки кода), на проекте самого артефакта (1022 строки кода) и на проектах с открытым исходным кодом: JUnit4 как проект среднего размера (32 232 строки кода) и Debezium — большой многомодульный проект (249 803 строки кода). Тестирование проводилось на машине со следующими характеристиками: AMD Ryzen 7 7840H w/ Radeon(TM) 780M Graphics   3.80 GHz, 32 Гб ОЗУ. Конфигурация плагина для SpotBugs и артефакта представлены на фрагменте исходного кода ниже. Результаты тестирования представлены в таблице 1.
 
 Конфигурация плагинов для испытания:
 
 ```xml
 <!-- mvn com.github.spotbugs:spotbugs-maven-plugin:4.8.5.0:spotbugs -->
 <plugin>
-    <groupId>com.github.spotbugs</groupId>
-    <artifactId>spotbugs-maven-plugin</artifactId>
-    <version>4.8.5.0</version>
-    <executions>
-        <execution>
-            <id>default-cli</id>
-            <configuration>
-                <fork>false</fork>
-                <effort>Max</effort>
-                <threshold>Low</threshold>
-                <failOnError>true</failOnError>
-                <includeFilterFile>${project.basedir}/spotbugs-include.xml</includeFilterFile>
-                <excludeFilterFile>${project.basedir}/spotbugs-exclude.xml</excludeFilterFile>
-                <outputDirectory>${project.build.directory}</outputDirectory>
-                <plugins>
-                    <plugin>
-                        <groupId>com.h3xstream.findsecbugs</groupId>
-                        <artifactId>findsecbugs-plugin</artifactId>
-                        <version>1.13.0</version>
-                    </plugin>
-                </plugins>
-            </configuration>
-        </execution>
-    </executions>
+    <groupId>com.github.spotbugs</groupId>
+    <artifactId>spotbugs-maven-plugin</artifactId>
+    <version>4.8.5.0</version>
+    <executions>
+        <execution>
+            <id>default-cli</id>
+            <configuration>
+                <fork>false</fork>
+                <effort>Max</effort>
+                <threshold>Low</threshold>
+                <failOnError>true</failOnError>
+                <includeFilterFile>${project.basedir}/spotbugs-include.xml</includeFilterFile>
+                <excludeFilterFile>${project.basedir}/spotbugs-exclude.xml</excludeFilterFile>
+                <outputDirectory>${project.build.directory}</outputDirectory>
+                <plugins>
+                    <plugin>
+                        <groupId>com.h3xstream.findsecbugs</groupId>
+                        <artifactId>findsecbugs-plugin</artifactId>
+                        <version>1.13.0</version>
+                    </plugin>
+                </plugins>
+            </configuration>
+        </execution>
+    </executions>
 </plugin>
 <!-- mvn com.salat:bugfix-suggester-maven-plugin:suggest -->
 <plugin>
-    <groupId>com.salat.bugfix-suggester</groupId>
-    <artifactId>bugfix-suggester-maven-plugin</artifactId>
-    <executions>
-        <execution>
-            <id>default-cli</id>
-            <configuration>
-                <modelName>deepseek-coder-v2:lite</modelName>
-                <modelRequestTimeout>9000</modelRequestTimeout>
-                <prompt>SpotBugs after analysis gives this error. Suggest a fix. The error: %bugContent%. Source code: ```%sourceFile%```. Keep the answer small and precise, code mostly.</prompt>
-            </configuration>
-        </execution>
-    </executions>
+    <groupId>com.salat.bugfix-suggester</groupId>
+    <artifactId>bugfix-suggester-maven-plugin</artifactId>
+    <executions>
+    <execution>
+        <id>default-cli</id>
+        <configuration>
+            <modelName>deepseek-coder-v2:lite</modelName>
+            <modelRequestTimeout>9000</modelRequestTimeout>
+            <prompt>SpotBugs after analysis gives this error. Suggest a fix. The error: %bugContent%. Source code: ```%sourceFile%```. Keep the answer small and precise, code mostly.</prompt>
+            </configuration>
+        </execution>
+    </executions>
 </plugin>
 
 ```
@@ -336,7 +337,7 @@ DeepCode [[74]](#74) — статический анализатор от Snyk, 
 <li id="34">Liu K. et al. On the efficiency of test suite based program repair: A systematic assessment of 16 automated repair systems for java programs //Proceedings of the ACM/IEEE 42nd International Conference on Software Engineering. — 2020. — С. 615-627.</li>
 <li id="35">GenProg [Электронный ресурс] //Squareslab.github.io. — 2025. Режим доступа: https://squareslab.github.io/genprog-code. — Загл. с экрана</li>
 <li id="36">Weimer W. et al. Automatically finding patches using genetic programming //2009 IEEE 31st International Conference on Software Engineering. — IEEE, 2009. — С. 364-374.</li>
-<li id="37">GitHub - SpoonLabs/astor: Automatic program repair for Java with generate-and-validate techniques :v::v:: jGenProg (2014) - jMutRepair (2016) - jKali  (2016) - DeepRepair (2017) - Cardumen (2018) - 3sfix (2018) [Электронный ресурс] //Github.com. — 2025. Режим доступа: https://github.com/SpoonLabs/astor. — Загл. с экрана</li>
+<li id="37">GitHub - SpoonLabs/astor: Automatic program repair for Java with generate-and-validate techniques :v::v:: jGenProg (2014) - jMutRepair (2016) - jKali (2016) - DeepRepair (2017) - Cardumen (2018) - 3sfix (2018) [Электронный ресурс] //Github.com. — 2025. Режим доступа: https://github.com/SpoonLabs/astor. — Загл. с экрана</li>
 <li id="38">Responsive Nav · Advanced Left Navigation Demo [Электронный ресурс] //Qiyuhua.github.io. — 2025. Режим доступа: https://qiyuhua.github.io/projects/rsrepair. — Загл. с экрана</li>
 <li id="39">Qi Y. et al. The strength of random search on automated program repair //Proceedings of the 36th international conference on software engineering. — 2014. — С. 254-265.</li>
 <li id="40">GitHub - yyxhdy/arja: Multi-Objective GP for Automated Repair of Java [Электронный ресурс] //Github.com. — 2025. Режим доступа: https://github.com/yyxhdy/arja. — Загл. с экрана</li>
