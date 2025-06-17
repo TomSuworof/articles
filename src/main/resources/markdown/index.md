@@ -1,3 +1,8 @@
+[Дипломная работа 2025](./coursework-bugfix-suggester-2025.html)
+<div class="article-publication-date">
+    <time datetime="2025-06-16 10:00">16.06.2025 10:00</time>
+</div>
+
 [Goodnight, developers](./goodnight-developers.html)
 <div class="article-publication-date">
     <time datetime="2025-03-26 21:02">26.03.2025 21:02</time>
