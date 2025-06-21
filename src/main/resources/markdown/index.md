@@ -1,3 +1,8 @@
+[Лови волну](./surfs-up.html)
+<div class="article-publication-date">
+    <time datetime="2025-06-21 22:25">21.06.2025 22:25</time>
+</div>
+
 [Ты будешь испытан тем, что порицаешь](./you-will-be-tested-by-what-you-blame.html)
 <div class="article-publication-date">
     <time datetime="2025-06-16 10:00">16.06.2025 10:00</time>
