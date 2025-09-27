@@ -1,3 +1,8 @@
+[Прямо из мозга](./straight-outta-brain.html)
+<div class="article-publication-date">
+    <time datetime="2025-09-27 13:11">27.09.2025 13:11</time>
+</div>
+
 [600 дней ведения дневника](./600-days-of-journaling.html)
 <div class="article-publication-date">
     <time datetime="2025-09-21 13:40">21.09.2025 13:40</time>
