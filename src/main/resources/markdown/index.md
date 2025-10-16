@@ -1,3 +1,8 @@
+[Auto catalog archive](./auto-catalog-archive.html)
+<div class="article-publication-date">
+    <time datetime="2025-10-16 19:04">16.10.2025 19:04</time>
+</div>
+
 [Прямо из мозга](./straight-outta-brain.html)
 <div class="article-publication-date">
     <time datetime="2025-09-27 13:11">27.09.2025 13:11</time>
