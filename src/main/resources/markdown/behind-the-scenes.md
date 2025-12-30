@@ -14,6 +14,6 @@
 
 Как мантра во всех этих случаях звучала цитата Джобса: “Everything around you that you call life, was made up by people who were no smarter than you. And you can change it. And you can influence it. You can build your own things that other people can use. And the minute that you understand that you can poke life, that if you push in, something will pop out the other side. That you can change it. That you can mold it. That's maybe the most important thing.”
 
-И если нужен вывод этого года и пожелание на новый год, то вот оно: встаньте за кулисы как можно бОльшего числа крутых проектов. Делайте то, что для обычных людей будет магией. Потому что
+И если нужны выводы этого года и пожелания на новый год, то вот они: встаньте за кулисы как можно бОльшего числа крутых проектов. Делайте то, что для обычных людей будет магией. Потому что
 
 **Не боги горшки обжигают**.
