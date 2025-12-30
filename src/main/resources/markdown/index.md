@@ -1,3 +1,8 @@
+[Закулисье](./behind-the-scenes.html)
+<div class="article-publication-date">
+    <time datetime="2025-12-30 15:42">30.12.2025 15:42</time>
+</div>
+
 [Auto catalog archive](./auto-catalog-archive.html)
 <div class="article-publication-date">
     <time datetime="2025-10-16 19:04">16.10.2025 19:04</time>
