@@ -1,3 +1,8 @@
+[Леонардо да Винчи](./da-vinci.html)
+<div class="article-publication-date">
+    <time datetime="2026-04-22 20:06">22.04.2026 20:06</time>
+</div>
+
 [Закулисье](./behind-the-scenes.html)
 <div class="article-publication-date">
     <time datetime="2025-12-30 15:42">30.12.2025 15:42</time>
