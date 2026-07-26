@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Generate HTMLs
-        run: mvn clean com.ruleoftech:markdown-page-generator-plugin:2.1.0:generate
+        run: mvn clean compile
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
