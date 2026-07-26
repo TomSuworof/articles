@@ -55,6 +55,16 @@
               <mainClass>com.salat.allarticles.MdLinkConverter</mainClass>
             </configuration>
           </execution>
+          <execution>
+            <id>generate-all-articles</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>com.salat.allarticles.AllArticlesGenerator</mainClass>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
