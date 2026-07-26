@@ -122,7 +122,7 @@
 </div>
 <br>
 
-[Инди](./index.md)
+[Инди](./indie.md)
 <div class="article-publication-date">
     <time datetime="2024-03-27 21:04">27.03.2024 21:04</time>
 </div>
