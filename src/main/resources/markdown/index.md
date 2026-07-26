@@ -2,41 +2,49 @@
 <div class="article-publication-date">
     <time datetime="2026-04-22 20:06">22.04.2026 20:06</time>
 </div>
+<br>
 
 [Закулисье](./behind-the-scenes.md)
 <div class="article-publication-date">
     <time datetime="2025-12-30 15:42">30.12.2025 15:42</time>
 </div>
+<br>
 
 [Auto catalog archive](./auto-catalog-archive.md)
 <div class="article-publication-date">
     <time datetime="2025-10-16 19:04">16.10.2025 19:04</time>
 </div>
+<br>
 
 [Прямо из мозга](./straight-outta-brain.md)
 <div class="article-publication-date">
     <time datetime="2025-09-27 13:11">27.09.2025 13:11</time>
 </div>
+<br>
 
 [600 дней ведения дневника](./600-days-of-journaling.md)
 <div class="article-publication-date">
     <time datetime="2025-09-21 13:40">21.09.2025 13:40</time>
 </div>
+<br>
 
 [Лови волну](./surfs-up.md)
 <div class="article-publication-date">
     <time datetime="2025-06-21 22:25">21.06.2025 22:25</time>
 </div>
+<br>
 
 [Ты будешь испытан тем, что порицаешь](./you-will-be-tested-by-what-you-blame.md)
 <div class="article-publication-date">
     <time datetime="2025-06-16 10:00">16.06.2025 10:00</time>
 </div>
+<br>
 
 [Дипломная работа 2025](./coursework-bugfix-suggester-2025.md)
 <div class="article-publication-date">
     <time datetime="2025-06-16 10:00">16.06.2025 10:00</time>
 </div>
+<br>
 
 [Goodnight, developers](./goodnight-developers.md)
 <div class="article-publication-date">
