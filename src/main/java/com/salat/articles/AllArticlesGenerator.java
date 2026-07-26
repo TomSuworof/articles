@@ -1,4 +1,4 @@
-package com.salat.allarticles;
+package com.salat.articles;
 
 import java.io.IOException;
 import java.nio.file.Files;
