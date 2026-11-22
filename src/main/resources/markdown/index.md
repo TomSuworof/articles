@@ -1,3 +1,9 @@
+[Что мне не нравится в коде с нейронками](./my-problems-with-neuro-code.md)
+<div class="article-publication-date">
+    <time datetime="2026-11-22 18:39">22.11.2026 18:39</time>
+</div>
+<br>
+
 [Леонардо да Винчи](./da-vinci.md)
 <div class="article-publication-date">
     <time datetime="2026-04-22 20:06">22.04.2026 20:06</time>
