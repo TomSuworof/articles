@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Что мне не нравится в коде с нейронками</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono&display=swap">
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+</head>
+<body>
+    <div class="header-buttons">
+        <div class="home">
+            <a href=".">Все статьи</a>
+        </div>
+        <div class="tg">
+            <a href="https://t.me/tom_suworof_channel">Телеграм-канал</a>
+        </div>
+    </div>
+    <div class="article-root col-md-8 offset-md-2"><h1>Что мне не нравится в коде с нейронками</h1>
+<div class="article-publication-date">
+    <time datetime="2026-11-22 18:39">22.11.2026 18:39</time>
+</div>
+<p>Есть 2 подхода к законам: казуистический и кодифицированный.</p>
+<p>Казуистический — подход, при котором законы создаются на основе случаев, которые привели к чему-то плохому и должны быть запрещены. Такое особенно распространено в Штатах. Например, в штате Аризона законом запрещено укладывать ослов спать в ванной. Почему? Один чел так уложил своего ослика, произошёл потоп, ослика долго спасали, потратили кучу денег и, чтобы такое не повторилось (трата кучи  денег), запретили это дело.</p>
+<p>Кодифицированный — подход, при котором случаи кластеризуются и создают правила для дальнейшего поведения. Такое распространено в романо-германском праве и, как несложно догадаться, водится в Европе и России. Например, у нас есть запрет на самовыгул кроме специальных площадок. Заметьте, тут нет ничего про время, вид, породу и прочее, только общее правило с множеством подходящих случаев.</p>
+<p>Эти подходы по определению отличаются в скорости и сложности. В казуистическом  изменение вносится как только случился несчастный случай, чтобы избежать его повторов — реактивно. В кодифицированном нужно накопить случаи и понять их причину, чтобы бороться именно с ней — системно.</p>
+<p>И вот моя проблема с нейро-кодом в том, что он пишется в казуистическом подходе. Когда дали инструкцию, дали окружение, и модель подгоняет код, чтобы работало у тебя. Только у тебя. Только в одном окружении. Да, будут покрыты все случаи, но только те, что удалось повторить у тебя. Не создаются правила для работы, создаются заплатки от проблем.</p>
+<p>Не могу обойтись и без примера из игр. На уровне 10 был убит важный персонаж из пистолета. Как исправить? Модель предложит запретить выстрелы из пистолета на 10 уровне в определённой локации. А нужно запретить огонь по своим.</p>
+<p><strong>Нужна не реакция, нужна система.</strong></p>
+<p>Возможно, это skill issue. И я даже буду этому рад, потому что смогу исправить. Но я такое замечал не раз и не два у себя и коллег. Скормите своему агенту этот пост, пусть покумекает.</p>
+    </div>
+</body>
+</html>
