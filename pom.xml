@@ -75,6 +75,19 @@
               <mainClass>com.salat.articles.AllArticlesGenerator</mainClass>
             </configuration>
           </execution>
+          <execution>
+            <id>generate-rss-feed</id>
+            <phase>compile</phase>
+            <goals>
+              <goal>java</goal>
+            </goals>
+            <configuration>
+              <mainClass>com.salat.articles.RssFeedGenerator</mainClass>
+              <arguments>
+                <argument>${project.url}</argument>
+              </arguments>
+            </configuration>
+          </execution>
         </executions>
       </plugin>
     </plugins>
