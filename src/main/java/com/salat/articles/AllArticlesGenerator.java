@@ -50,6 +50,7 @@ public class AllArticlesGenerator {
 
         String combined = header
                 + String.join("\n<hr class=\"all-articles-separator\">\n", sections)
+                + "\n<script src=\"./js/dynamic-title-on-scroll.js\"></script>"
                 + "\n" + footer;
 
         Path out = buildDir.resolve("all.html");
